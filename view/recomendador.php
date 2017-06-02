@@ -180,8 +180,6 @@
 	print_r("<br/>");
 	print_r("<br/>");
 	
-	#-----------------------------------------------
-	
 	print_r($prod_recomendados);
 	print_r("<br/>");
 	print_r("<br/>");

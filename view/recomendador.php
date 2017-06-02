@@ -126,10 +126,10 @@
 	$sql1 = "SELECT * FROM producto ORDER BY id_producto ASC";
 	$result1 = pg_query($conexion, $sql1);
 
-	/*print_r(pg_num_rows($result));
+	print_r(pg_num_rows($result));
 	print_r("<br/>");
 	print_r(pg_num_rows($result1));
-	print_r("<br/>");*/
+	print_r("<br/>");
 
 	#Conformación del arreglo de productos del cliente
 	$array_prodcl = array();
@@ -138,9 +138,9 @@
 		$array_prodcl[$i] = $row['descripcion'];
 		$i++;
 	}
-	/*print_r($array_prodcl);
+	print_r($array_prodcl);
 	print_r("<br/>");
-	print_r("<br/>");*/
+	print_r("<br/>");
 
 	#Elimina elementos repetidos del vector de productos del cliente
 	$nvo_array_prodcl = array();
@@ -149,18 +149,18 @@
 			array_push($nvo_array_prodcl, $array_prodcl[$i]);
 		}
 	}
-	/*print_r($nvo_array_prodcl);
+	print_r($nvo_array_prodcl);
 	print_r("<br/>");
-	print_r("<br/>");*/
+	print_r("<br/>");
 	
 	#Conformación del arreglo de productos de la base de datos, inicia desde 1
 	$array_prod = array();
 	while ($row1 = pg_fetch_array($result1)) {
 		$array_prod[$row1['id_producto']] = $row1['descripcion'];
 	}
-	/*print_r($array_prod);
+	print_r($array_prod);
 	print_r("<br/>");
-	print_r("<br/>");*/
+	print_r("<br/>");
 	
 	$lista_nprod[][] = array();
 	$prod_recomendados[] = array();
@@ -176,12 +176,12 @@
 			}
 		}
 	}
-	/*print_r($lista_nprod);
+	print_r($lista_nprod);
 	print_r("<br/>");
 	print_r("<br/>");
-	*/
+	
 	#-----------------------------------------------
-	/*
+	
 	print_r($prod_recomendados);
 	print_r("<br/>");
 	print_r("<br/>");
@@ -189,7 +189,7 @@
 	print_r(count($prod_recomendados));
 	print_r("<br/>");
 	print_r("<br/>");
-	*/
+	
 
 	for ($i=0; $i < count($prod_recomendados); $i++) { 
 

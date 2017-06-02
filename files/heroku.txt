@@ -1,0 +1,37 @@
+Documentation:
+https://devcenter.heroku.com/articles/getting-started-with-php#introduction
+
+Video:
+https://www.youtube.com/watch?v=oNBILBm07dY
+
+PostgreSQL video:
+https://www.youtube.com/watch?v=GAHsl0AfK-0&t=41s
+
+#------------------------------------------------------------------------------
+
+MacBook-Pro-de-Giovanni:prueba Giovanni$ heroku login
+
+MacBook-Pro-de-Giovanni:prueba Giovanni$ git init
+
+MacBook-Pro-de-Giovanni:prueba Giovanni$ heroku create appprueba2354
+
+Creating ⬢ appsupermercado... done
+https://appprueba2354.herokuapp.com/ | https://git.heroku.com/appprueba2354.git
+
+Create index.php in folder appprueba 
+
+#Hacer commit por consola
+MacBook-Pro-de-Giovanni:prueba Giovanni$ git add .
+MacBook-Pro-de-Giovanni:prueba Giovanni$ git commit -am "added index file"
+
+MacBook-Pro-de-Giovanni:prueba Giovanni$ git push heroku master
+
+
+#Eliminar un repositorio .git
+MacBook-Pro-de-Giovanni:prueba Giovanni$ rm -rf .git
+
+#Mostar los commit
+MacBook-Pro-de-Giovanni:prueba Giovanni$ git log
+
+#Volver a una version anterior
+MacBook-Pro-de-Giovanni:prueba Giovanni$ git checkout --commit---(076e1efd0e3729827377cb22f035c839a7580ce7)
